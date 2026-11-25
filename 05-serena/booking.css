@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #FFFFF0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: #800020;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 10;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url("hero-serena.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #FFFFF0;
+  background: rgba(128, 0, 32, 0.7);
+  padding: 15px;
+}
+
+.hero a {
+  background: #C9A84C;
+  color: #800020;
+  font-weight: bold;
+  padding: 10px 18px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+section {
+  padding: 10px 20px 30px;
+}
+
+h2, h3 {
+  color: #800020;
+}
+
+.room-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.room-card {
+  width: calc(50% - 20px);
+  background: #FFFFF0;
+  border: 1px solid #C9A84C;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: #800020;
+  color: white;
+}
+
+.yes {
+  color: green;
+  font-weight: bold;
+}
+
+.no {
+  color: red;
+  font-weight: bold;
+}

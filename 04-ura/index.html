@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TIN Registration Portal</title>
+<link rel="stylesheet" href="portal.css">
+</head>
+<body>
+<header>
+<img src="ura-logo.png" alt="Uganda Revenue Authority logo">
+<h1>TIN Registration Portal</h1>
+</header>
+<div class="info">Have your National ID ready before starting.</div>
+<form>
+<input type="radio" id="individual" name="taxpayer" value="Individual Taxpayer" checked>
+<label for="individual" class="toggle">Individual Taxpayer</label>
+<input type="radio" id="business" name="taxpayer" value="Business Entity">
+<label for="business" class="toggle">Business Entity</label>
+<fieldset>
+<legend>Section A: Individual Taxpayer Details</legend>
+<label for="fullname">Full Name</label>
+<input type="text" id="fullname" name="fullname" required>
+<label for="nin">NIN</label>
+<input type="text" id="nin" name="nin" required maxlength="14" minlength="14" pattern="[A-Z]{2}[A-Z0-9]{12}" placeholder="CM1234567890AB">
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob" name="dob">
+<label>Gender</label>
+<input type="radio" id="male" name="gender" value="Male">
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label>
+<label for="district">District</label>
+<select id="district" name="district">
+<option value="">Select district</option>
+<option>Kampala</option>
+<option>Wakiso</option>
+<option>Mukono</option>
+<option>Jinja</option>
+<option>Mbarara</option>
+</select>
+<label for="phone">Phone</label>
+<input type="tel" id="phone" name="phone" required>
+<label for="email">Email</label>
+<input type="email" id="email" name="email">
+<label for="nationalid">Upload National ID</label>
+<input type="file" id="nationalid" name="nationalid" accept=".jpg,.pdf">
+<button type="submit" class="next">Next</button>
+</fieldset>
+</form>
+</body>
+</html>

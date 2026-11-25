@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: white;
+  color: black;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.meta {
+  background: #EEEEEE;
+  text-align: center;
+  padding: 10px;
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+thead th {
+  background: #333;
+  color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background: white;
+}
+
+tbody tr:nth-child(even) {
+  background: #FFF8F4;
+}
+
+tfoot td {
+  font-weight: bold;
+  background: #EEEEEE;
+}

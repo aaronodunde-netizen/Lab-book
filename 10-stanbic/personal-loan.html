@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Loan</title>
+  <link rel="stylesheet" href="dlac.css">
+</head>
+<body>
+  <header>
+    <h1>Stanbic Bank Uganda</h1>
+    <nav>
+      <a href="index.html">Loan Products</a>
+      <a href="personal-loan.html">Personal Loan</a>
+    </nav>
+  </header>
+  <form>
+    <fieldset>
+      <legend>Personal Loan Application</legend>
+      <label for="title">Title</label>
+      <select id="title" name="title">
+        <option>Mr</option>
+        <option>Mrs</option>
+        <option>Ms</option>
+        <option>Dr</option>
+      </select>
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" name="firstname" required>
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" name="lastname" required>
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+      <label for="district">District</label>
+      <select id="district" name="district">
+        <option>Select district</option>
+        <option>Kampala</option>
+        <option>Wakiso</option>
+        <option>Mukono</option>
+        <option>Jinja</option>
+        <option>Gulu</option>
+      </select>
+      <label for="salary">Monthly Salary</label>
+      <input type="number" id="salary" name="salary" min="300000">
+      <p style="background:#EAF3DE; color:#27500A; padding:8px;">You appear eligible for this loan.</p>
+      <label for="amount">Loan Amount Requested</label>
+      <input type="number" id="amount" name="amount">
+      <label for="period">Repayment Period</label>
+      <select id="period" name="period">
+        <option value="12">12 months</option>
+        <option value="24">24 months</option>
+        <option value="36">36 months</option>
+      </select>
+      <label for="purpose">Loan Purpose</label>
+      <select id="purpose" name="purpose">
+        <option>School Fees</option>
+        <option>Medical</option>
+        <option>Home Improvement</option>
+        <option>Other</option>
+      </select>
+      <label for="declare">
+        <input type="checkbox" id="declare" name="declare" required>
+        I confirm that the information provided is accurate.
+      </label>
+      <button type="submit" class="submit">Submit Application</button>
+    </fieldset>
+  </form>
+</body>
+</html>

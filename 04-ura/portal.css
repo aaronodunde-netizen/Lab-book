@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: white;
+  color: black;
+}
+
+header {
+  background: #003366;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+img {
+  height: 100px;
+}
+
+.info {
+  background: #FFB81C;
+  color: #003366;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+}
+
+fieldset {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #003366;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label.toggle {
+  background: #003366;
+  color: white;
+}
+
+label.toggle {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #003366;
+  color: #003366;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+}
+
+input[name="gender"] {
+  display: inline;
+}
+
+label[for="male"],
+label[for="female"] {
+  display: inline;
+  margin-right: 16px;
+  font-weight: normal;
+}
+
+.next {
+  background: #003366;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 16px;
+}
